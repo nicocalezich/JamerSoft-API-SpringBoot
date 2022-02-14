@@ -1,4 +1,4 @@
-package com.api.services;
+package com.api.configs;
 
 import java.security.KeyManagementException;
 import java.security.KeyStoreException;

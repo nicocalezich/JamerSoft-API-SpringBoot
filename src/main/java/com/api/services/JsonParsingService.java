@@ -5,6 +5,8 @@ import java.security.KeyStoreException;
 import java.security.NoSuchAlgorithmException;
 import org.springframework.stereotype.Service;
 
+import com.api.configs.RestTemplateConfig;
+
 @Service
 public class JsonParsingService {
 	

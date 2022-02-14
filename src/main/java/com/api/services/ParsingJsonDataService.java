@@ -88,5 +88,27 @@ public class ParsingJsonDataService {
 		return abilitiesList;
 		
 	}
+	
+	public String getBasicInfo(JSONObject root) throws JSONException {
+			
+		String name = root.getString("name");
+			
+		return name;
+	}
+	
+	public String getDescriptionES(JSONObject root) throws Exception {
+		
+		final Integer ES_POSITION = 5;
+		
+		JSONArray descriptions = root.getJSONArray("descriptions");
+		
+		JSONObject element = descriptions.getJSONObject(ES_POSITION);
+		
+		String description = element.getString("description");
+		
+		return description;
+	}
+	
+
 
 }
